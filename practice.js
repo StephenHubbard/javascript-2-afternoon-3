@@ -151,8 +151,10 @@ uniq(names, function(uniqArr){
 //Code Here 
 
 function each(arr, cb){
-
+  for (let i = 0; i < arr.length; i++)
+    cb(arr, arr[i])
 }
+
 
 
 // Do not edit the code below.
